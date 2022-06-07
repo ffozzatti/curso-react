@@ -4,11 +4,19 @@ const ListRender = () => {
 
     const [list] = useState(["Matheus", "Pedro", "Josias", "Maria"])
 
-    const [user] = useState([
+    const [user, setUsers] = useState([
         { id: 1, name:"Matheus", age: 31 },
-        { id: 131654, name:"João", age: 28 },
-        { id: 456464, name:"Pedro", age: 44 }
+        { id: 2, name:"João", age: 28 },
+        { id: 3, name:"Pedro", age: 44 }
     ])
+
+    const deleteRamdom = () => {
+        const randomNumber = Math.floor(Math.random() * 4)
+
+        setUsers((prevUsers) => {
+            return prevUsers.filter((user) => randomNumber !== user.id)
+        })
+    }
 
   return (
     <div>
@@ -22,6 +30,7 @@ const ListRender = () => {
                 <li key={user.id}> {user.name} - {user.age}</li>
             ))}
         </ul>
+        <button onClick={deleteRamdom}>Delete ramdom user</button>
     </div>
   )
 }
