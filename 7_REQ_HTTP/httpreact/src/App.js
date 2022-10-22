@@ -53,8 +53,9 @@ function App() {
           <li key={product.id}>
             {product.name} - R$: {product.price}
             <button onClick={() => handleRemove(product.id)} >Excluir</button>
-          </li>              
-        ))}        
+          </li>                        
+        ))}
+               
       </ul>
       )}
           <div className="add-product">

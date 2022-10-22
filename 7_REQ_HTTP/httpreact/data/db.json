@@ -1,44 +1,19 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Camisa",
-      "price": 59.9
-    },
-    {
-      "id": 2,
-      "name": "Calça Vermelha",
-      "price": 90
-    },
-    {
-      "id": 3,
-      "name": "Boné aba reta",
-      "price": 29.9
-    },
-    {
-      "name": "Capa de chuva",
-      "price": "5.50",
-      "id": 5
-    },
-    {
-      "name": "Celular",
-      "price": "1500",
-      "id": 6
-    },
-    {
-      "name": "Fone",
+      "name": "Freio",
       "price": "30",
-      "id": 7
+      "id": 1
     },
     {
-      "name": "Teste",
+      "name": "Disco",
       "price": "20",
-      "id": 8
+      "id": 2
     },
     {
-      "name": "mouse",
-      "price": "60",
-      "id": 10
+      "name": "Mão de obra",
+      "price": "120",
+      "id": 3
     }
   ]
 }
